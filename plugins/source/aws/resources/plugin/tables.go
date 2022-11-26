@@ -15,6 +15,7 @@ import (
 	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/athena"
 	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/autoscaling"
 	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/backup"
+	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/budgets"
 	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/cloudformation"
 	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/cloudfront"
 	"github.com/cloudquery/cloudquery/plugins/source/aws/resources/services/cloudhsmv2"
@@ -134,6 +135,7 @@ func tables() []*schema.Table {
 		backup.Plans(),
 		backup.RegionSettings(),
 		backup.Vaults(),
+		budgets.Budgets(),
 		cloudformation.Stacks(),
 		cloudfront.CachePolicies(),
 		cloudfront.Distributions(),
